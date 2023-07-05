@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8492722E2A55931500B19813 /* NVToDoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8492722D2A55931500B19813 /* NVToDoApp.swift */; };
+		849272302A55931500B19813 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8492722F2A55931500B19813 /* ContentView.swift */; };
+		849272322A55931700B19813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849272312A55931700B19813 /* Assets.xcassets */; };
+		849272352A55931700B19813 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849272342A55931700B19813 /* Preview Assets.xcassets */; };
+		8492723F2A55931700B19813 /* NVToDoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8492723E2A55931700B19813 /* NVToDoTests.swift */; };
+		849272492A55931700B19813 /* NVToDoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849272482A55931700B19813 /* NVToDoUITests.swift */; };
+		8492724B2A55931700B19813 /* NVToDoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8492724A2A55931700B19813 /* NVToDoUITestsLaunchTests.swift */; };
+		849272582A55934300B19813 /* NVTodoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849272572A55934300B19813 /* NVTodoCardView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8492723B2A55931700B19813 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 849272222A55931500B19813 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 849272292A55931500B19813;
+			remoteInfo = NVToDo;
+		};
+		849272452A55931700B19813 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 849272222A55931500B19813 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 849272292A55931500B19813;
+			remoteInfo = NVToDo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8492722A2A55931500B19813 /* NVToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NVToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8492722D2A55931500B19813 /* NVToDoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVToDoApp.swift; sourceTree = "<group>"; };
+		8492722F2A55931500B19813 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		849272312A55931700B19813 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		849272342A55931700B19813 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8492723A2A55931700B19813 /* NVToDoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NVToDoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8492723E2A55931700B19813 /* NVToDoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVToDoTests.swift; sourceTree = "<group>"; };
+		849272442A55931700B19813 /* NVToDoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NVToDoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		849272482A55931700B19813 /* NVToDoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVToDoUITests.swift; sourceTree = "<group>"; };
+		8492724A2A55931700B19813 /* NVToDoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVToDoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		849272572A55934300B19813 /* NVTodoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVTodoCardView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		849272272A55931500B19813 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849272372A55931700B19813 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849272412A55931700B19813 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		849272212A55931500B19813 = {
+			isa = PBXGroup;
+			children = (
+				8492722C2A55931500B19813 /* NVToDo */,
+				8492723D2A55931700B19813 /* NVToDoTests */,
+				849272472A55931700B19813 /* NVToDoUITests */,
+				8492722B2A55931500B19813 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8492722B2A55931500B19813 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8492722A2A55931500B19813 /* NVToDo.app */,
+				8492723A2A55931700B19813 /* NVToDoTests.xctest */,
+				849272442A55931700B19813 /* NVToDoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8492722C2A55931500B19813 /* NVToDo */ = {
+			isa = PBXGroup;
+			children = (
+				8492722D2A55931500B19813 /* NVToDoApp.swift */,
+				8492722F2A55931500B19813 /* ContentView.swift */,
+				849272572A55934300B19813 /* NVTodoCardView.swift */,
+				849272312A55931700B19813 /* Assets.xcassets */,
+				849272332A55931700B19813 /* Preview Content */,
+			);
+			path = NVToDo;
+			sourceTree = "<group>";
+		};
+		849272332A55931700B19813 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				849272342A55931700B19813 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8492723D2A55931700B19813 /* NVToDoTests */ = {
+			isa = PBXGroup;
+			children = (
+				8492723E2A55931700B19813 /* NVToDoTests.swift */,
+			);
+			path = NVToDoTests;
+			sourceTree = "<group>";
+		};
+		849272472A55931700B19813 /* NVToDoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				849272482A55931700B19813 /* NVToDoUITests.swift */,
+				8492724A2A55931700B19813 /* NVToDoUITestsLaunchTests.swift */,
+			);
+			path = NVToDoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		849272292A55931500B19813 /* NVToDo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8492724E2A55931700B19813 /* Build configuration list for PBXNativeTarget "NVToDo" */;
+			buildPhases = (
+				849272262A55931500B19813 /* Sources */,
+				849272272A55931500B19813 /* Frameworks */,
+				849272282A55931500B19813 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NVToDo;
+			productName = NVToDo;
+			productReference = 8492722A2A55931500B19813 /* NVToDo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		849272392A55931700B19813 /* NVToDoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 849272512A55931700B19813 /* Build configuration list for PBXNativeTarget "NVToDoTests" */;
+			buildPhases = (
+				849272362A55931700B19813 /* Sources */,
+				849272372A55931700B19813 /* Frameworks */,
+				849272382A55931700B19813 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8492723C2A55931700B19813 /* PBXTargetDependency */,
+			);
+			name = NVToDoTests;
+			productName = NVToDoTests;
+			productReference = 8492723A2A55931700B19813 /* NVToDoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		849272432A55931700B19813 /* NVToDoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 849272542A55931700B19813 /* Build configuration list for PBXNativeTarget "NVToDoUITests" */;
+			buildPhases = (
+				849272402A55931700B19813 /* Sources */,
+				849272412A55931700B19813 /* Frameworks */,
+				849272422A55931700B19813 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				849272462A55931700B19813 /* PBXTargetDependency */,
+			);
+			name = NVToDoUITests;
+			productName = NVToDoUITests;
+			productReference = 849272442A55931700B19813 /* NVToDoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		849272222A55931500B19813 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					849272292A55931500B19813 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					849272392A55931700B19813 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 849272292A55931500B19813;
+					};
+					849272432A55931700B19813 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 849272292A55931500B19813;
+					};
+				};
+			};
+			buildConfigurationList = 849272252A55931500B19813 /* Build configuration list for PBXProject "NVToDo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 849272212A55931500B19813;
+			productRefGroup = 8492722B2A55931500B19813 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				849272292A55931500B19813 /* NVToDo */,
+				849272392A55931700B19813 /* NVToDoTests */,
+				849272432A55931700B19813 /* NVToDoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		849272282A55931500B19813 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849272352A55931700B19813 /* Preview Assets.xcassets in Resources */,
+				849272322A55931700B19813 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849272382A55931700B19813 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849272422A55931700B19813 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		849272262A55931500B19813 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849272302A55931500B19813 /* ContentView.swift in Sources */,
+				849272582A55934300B19813 /* NVTodoCardView.swift in Sources */,
+				8492722E2A55931500B19813 /* NVToDoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849272362A55931700B19813 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8492723F2A55931700B19813 /* NVToDoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849272402A55931700B19813 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8492724B2A55931700B19813 /* NVToDoUITestsLaunchTests.swift in Sources */,
+				849272492A55931700B19813 /* NVToDoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8492723C2A55931700B19813 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 849272292A55931500B19813 /* NVToDo */;
+			targetProxy = 8492723B2A55931700B19813 /* PBXContainerItemProxy */;
+		};
+		849272462A55931700B19813 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 849272292A55931500B19813 /* NVToDo */;
+			targetProxy = 849272452A55931700B19813 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8492724C2A55931700B19813 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8492724D2A55931700B19813 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8492724F2A55931700B19813 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NVToDo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nikilicious09.NVToDo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		849272502A55931700B19813 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NVToDo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nikilicious09.NVToDo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		849272522A55931700B19813 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nikilicious09.NVToDoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NVToDo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NVToDo";
+			};
+			name = Debug;
+		};
+		849272532A55931700B19813 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nikilicious09.NVToDoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NVToDo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NVToDo";
+			};
+			name = Release;
+		};
+		849272552A55931700B19813 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nikilicious09.NVToDoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NVToDo;
+			};
+			name = Debug;
+		};
+		849272562A55931700B19813 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nikilicious09.NVToDoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NVToDo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		849272252A55931500B19813 /* Build configuration list for PBXProject "NVToDo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8492724C2A55931700B19813 /* Debug */,
+				8492724D2A55931700B19813 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8492724E2A55931700B19813 /* Build configuration list for PBXNativeTarget "NVToDo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8492724F2A55931700B19813 /* Debug */,
+				849272502A55931700B19813 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		849272512A55931700B19813 /* Build configuration list for PBXNativeTarget "NVToDoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849272522A55931700B19813 /* Debug */,
+				849272532A55931700B19813 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		849272542A55931700B19813 /* Build configuration list for PBXNativeTarget "NVToDoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849272552A55931700B19813 /* Debug */,
+				849272562A55931700B19813 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 849272222A55931500B19813 /* Project object */;
+}
