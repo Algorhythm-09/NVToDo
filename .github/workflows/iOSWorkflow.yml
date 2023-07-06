@@ -1,0 +1,41 @@
+name: iOS Workflow
+
+on:
+  push:
+    branches:
+      - 'release_v*'
+
+runs-on: macos-latest
+
+jobs:
+  build_and_release:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: GitHub Action for SwiftLint
+        uses: norio-nomura/action-swiftlint@3.2.1
+
+      - name: Build and Test
+        run: swift test --enable-code-coverage
+
+      - name: Create Tag and Release
+        if: startsWith(github.ref, 'refs/heads/release_v') # Only execute for branches starting with "release_v"
+        id: create_release
+        run: |
+          TAG_NAME=$(echo "${{ github.ref }}" | sed -E 's/refs\/heads\/release_v//')
+          RELEASE_NAME="Release $TAG_NAME"
+          RELEASE_BODY="This is the release for version $TAG_NAME"
+
+          echo "Creating tag and release..."
+          git tag -a "$TAG_NAME" -m "$RELEASE_NAME"
+          git push origin "$TAG_NAME"
+
+          echo "Creating GitHub release..."
+          RELEASE_ID=$(gh release create "$TAG_NAME" --target "release" --title "$RELEASE_NAME" --notes "$RELEASE_BODY")
+          if [[ "${{ github.ref }}" == *veryimportant ]]; then
+            echo "This is a very important release"
+            gh release update "$RELEASE_ID" --append-tag "very-important"
+          fi
