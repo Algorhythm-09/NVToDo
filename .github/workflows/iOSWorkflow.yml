@@ -17,7 +17,7 @@ jobs:
         run: swiftlint
 
       - name: Build and Test
-        run: swift test --enable-code-coverage
+        run: xcodebuild test -scheme YourScheme -destination "platform=iOS Simulator,OS=14.5,name=iPhone 12"
 
       - name: Create Tag and Release
         if: startsWith(github.ref, 'refs/heads/release_v') # Only execute for branches starting with "release_v"
