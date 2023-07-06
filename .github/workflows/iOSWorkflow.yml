@@ -17,10 +17,10 @@ jobs:
         run: swiftlint
 
       - name: Build
-        run: xcodebuild build -scheme NVToDo
+        run: xcodebuild -allowProvisioningUpdates build -scheme NVToDo
 
       - name: Test
-        run: xcodebuild test -scheme YourScheme -destination 'platform=iOS Simulator,name=iPhone 14'
+        run: xcodebuild -allowProvisioningUpdates test -scheme YourScheme -destination 'platform=iOS Simulator,name=iPhone 14'
 
       - name: Create Tag and Release
         if: startsWith(github.ref, 'refs/heads/release_v') # Only execute for branches starting with "release_v"
