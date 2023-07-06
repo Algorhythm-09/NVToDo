@@ -10,7 +10,7 @@ import SwiftUI
 struct Todo: Identifiable, Equatable {
     let id = UUID()
     var title: String
-    var isEditing = false // Track if the card is being edited
+    var isEditing = false
 }
 
 class TodoViewModel: ObservableObject {
@@ -30,14 +30,12 @@ class TodoViewModel: ObservableObject {
 
     func toggleEditing(for todo: Todo) {
         if let index = todos.firstIndex(of: todo) {
-            // Toggle editing for the selected todo
             todos[index].isEditing.toggle()
         }
     }
 
     func updateTodoTitle(for todo: Todo, with title: String) {
         if let index = todos.firstIndex(of: todo) {
-            // Update the title for the selected todo
             todos[index].title = title
         }
     }
@@ -59,20 +57,18 @@ struct NVTodoCardView: View {
                 .foregroundColor(.white)
                 .cornerRadius(8)
 
-                EditButton()
-                    .padding()
-                    .background(Color.red)
-                    .foregroundColor(.white)
-                    .cornerRadius(8)
+                if !viewModel.todos.isEmpty {
+                    EditButton()
+                        .padding()
+                        .background(Color.red)
+                        .foregroundColor(.white)
+                        .cornerRadius(8)
+                }
             }
 
             List {
                 ForEach(viewModel.todos) { todo in
-                    NVTodoCard(todo: todo, onDelete: {
-                        if let index = viewModel.todos.firstIndex(of: todo) {
-                            viewModel.deleteTodo(at: index)
-                        }
-                    }, onToggleEditing: {
+                    NVTodoCard(todo: todo, onToggleEditing: {
                         viewModel.toggleEditing(for: todo)
                     }, onUpdateTitle: { newTitle in
                         viewModel.updateTodoTitle(for: todo, with: newTitle)
@@ -81,6 +77,9 @@ struct NVTodoCardView: View {
                 }
                 .onMove { indices, newOffset in
                     viewModel.move(from: indices, to: newOffset)
+                }
+                .onDelete { index in
+                    viewModel.deleteTodo(at: index.first ?? 0)
                 }
             }
             .listStyle(PlainListStyle())
@@ -93,7 +92,6 @@ struct NVTodoCard: View {
     @Environment(\.editMode) var editMode
     @State private var editedTitle = ""
     let todo: Todo
-    let onDelete: () -> Void
     let onToggleEditing: () -> Void
     let onUpdateTitle: (String) -> Void
 
@@ -115,7 +113,7 @@ struct NVTodoCard: View {
 
             if todo.isEditing {
                 Image(systemName: "checkmark.circle.fill")
-                    .foregroundColor(.green)
+                    .foregroundColor(.black)
                     .onTapGesture {
                         onUpdateTitle(editedTitle)
                         onToggleEditing()
