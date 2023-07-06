@@ -5,11 +5,9 @@ on:
     branches:
       - 'release_v*'
 
-runs-on: macos-latest
-
 jobs:
   build_and_release:
-    runs-on: macos-latest
+    runs-on: macOS-latest
 
     steps:
       - name: Checkout Repository
