@@ -13,16 +13,15 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: GitHub Action for SwiftLint
-        uses: norio-nomura/action-swiftlint@3.2.1
+      - name: Install SwiftLint
+        run: |
+          brew install swiftlint
 
-      - name: Setup Xcode version
-        uses: maxim-lobanov/setup-xcode@v1.5.1
-        with:
-          xcode-version: latest
+      - name: Lint with SwiftLint
+        run: swiftlint
 
       - name: Build and Test
-        run: xcodebuild test -scheme YourScheme -destination "platform=iOS Simulator,name=iPhone 12"
+        run: swift test --enable-code-coverage
 
       - name: Create Tag and Release
         if: startsWith(github.ref, 'refs/heads/release_v') # Only execute for branches starting with "release_v"
