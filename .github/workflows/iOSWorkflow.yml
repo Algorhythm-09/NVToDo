@@ -35,7 +35,7 @@ jobs:
 
           echo "Creating GitHub release..."
           RELEASE_ID=$(gh release create "$TAG_NAME" --target "release" --title "$RELEASE_NAME" --notes "$RELEASE_BODY")
-          if [[ "${{ github.ref }}" == *veryimportant ]]; then
+          if [[ "${{ github.ref }}" == *Important ]]; then
             echo "This is a very important release"
             gh release update "$RELEASE_ID" --append-tag "very-important"
           fi
