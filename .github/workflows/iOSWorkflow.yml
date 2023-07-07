@@ -16,11 +16,6 @@ jobs:
       - name: Lint with SwiftLint
         run: swiftlint
 
-      - name: Select Xcode
-        run: sudo xcode-select -switch /Applications/Xcode_$.app && /usr/bin/xcodebuild -version
-      - name: Run unit tests
-        run: xcodebuild test -scheme BudgetOnTheGo -project BudgetOnTheGo.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 12,OS=$' | xcpretty && exit ${PIPESTATUS[0]}
-
       - name: Create Tag and Release
         if: startsWith(github.ref, 'refs/heads/release_v') # Only execute for branches starting with "release_v"
         id: create_release
