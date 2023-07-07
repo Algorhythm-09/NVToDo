@@ -18,7 +18,7 @@ jobs:
 
       - name: Build application
         run: |
-          set -o pipefail && xcodebuild clean -scheme $SCHEME -destination "platform=iOS Simulator,name=$DEVICE" -derivedDataPath $DERIVED_DATA_PATH build-for-testing | xcpretty --color --simple
+          set -o pipefail && xcodebuild clean -scheme NVToDo -destination "platform=iOS Simulator,name=$DEVICE" -derivedDataPath $DERIVED_DATA_PATH build-for-testing | xcpretty --color --simple
 
       - name: Upload products
         uses: actions/checkout@v3
