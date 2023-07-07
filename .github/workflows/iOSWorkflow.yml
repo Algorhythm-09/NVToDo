@@ -5,6 +5,9 @@ on:
     branches:
       - 'release_v*'
 
+permissions:
+  contents: write
+
 jobs:
   build_and_release:
     runs-on: macos-latest
