@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84796E4E2A581E0C0097B0E4 /* NVToDo.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = NVToDo.xctestplan; path = ../../NVToDo.xctestplan; sourceTree = "<group>"; };
 		8492722A2A55931500B19813 /* NVToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NVToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8492722D2A55931500B19813 /* NVToDoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVToDoApp.swift; sourceTree = "<group>"; };
 		8492722F2A55931500B19813 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,6 +83,7 @@
 		849272212A55931500B19813 = {
 			isa = PBXGroup;
 			children = (
+				84796E4E2A581E0C0097B0E4 /* NVToDo.xctestplan */,
 				8492722C2A55931500B19813 /* NVToDo */,
 				8492723D2A55931700B19813 /* NVToDoTests */,
 				849272472A55931700B19813 /* NVToDoUITests */,
@@ -526,7 +528,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y974MTHNN4;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Nikilicious09.NVToDoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -546,7 +548,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y974MTHNN4;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Nikilicious09.NVToDoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -565,6 +567,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y974MTHNN4;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Nikilicious09.NVToDoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -583,6 +586,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y974MTHNN4;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Nikilicious09.NVToDoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
