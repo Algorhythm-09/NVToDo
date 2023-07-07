@@ -11,8 +11,8 @@
   "defaultOptions" : {
     "targetForVariableExpansion" : {
       "containerPath" : "container:NVToDo.xcodeproj",
-      "identifier" : "849272392A55931700B19813",
-      "name" : "NVToDoTests"
+      "identifier" : "849272292A55931500B19813",
+      "name" : "NVToDo"
     },
     "testTimeoutsEnabled" : true
   },
