@@ -3,7 +3,7 @@ name: iOS Workflow
 on:
   push:
     branches:
-      - 'release_v*'
+      - 'release_v*' 
 
 permissions:
   contents: write
