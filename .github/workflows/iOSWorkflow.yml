@@ -33,9 +33,8 @@ jobs:
           git push origin "$TAG_NAME"
 
           echo "Creating GitHub release..."
-          gh auth login --with-token $GITHUB_TOKEN
-          gh release create "$TAG_NAME" --target "release" --title "$RELEASE_NAME" --notes "$RELEASE_BODY"
+          RELEASE_ID=$(gh release create "$TAG_NAME" --title "$RELEASE_NAME" --notes "$RELEASE_BODY")
           if [[ "${{ github.ref }}" == *veryimportant ]]; then
             echo "This is a very important release"
-            gh release update "$TAG_NAME" --append-tag "very-important"
+            gh release update "$RELEASE_ID" --append-tag "very-important"
           fi
