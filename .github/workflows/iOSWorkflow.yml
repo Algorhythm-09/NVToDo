@@ -5,23 +5,30 @@ on:
     branches:
       - 'release_v*'
 
+permissions:
+  contents: write
+
 jobs:
   build_and_release:
     runs-on: macos-latest
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
 
-      - name: GitHub Action for SwiftLint
-        uses: norio-nomura/action-swiftlint@3.2.1
+      - name: Lint with SwiftLint
+        run: swiftlint
 
-      - name: Build and Test
-        run: swift test --enable-code-coverage
+      - name: Build application
+        run: xcodebuild build -scheme NVToDo -destination "platform=iOS Simulator,name=iPhone 12"
+
+      - name: Run tests
+        run: xcodebuild test -scheme NVToDo -destination "platform=iOS Simulator,name=iPhone 12"
 
       - name: Create Tag and Release
         if: startsWith(github.ref, 'refs/heads/release_v') # Only execute for branches starting with "release_v"
-        id: create_release
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }} # Use the secret here
         run: |
           TAG_NAME=$(echo "${{ github.ref }}" | sed -E 's/refs\/heads\/release_v//')
           RELEASE_NAME="Release $TAG_NAME"
@@ -32,8 +39,8 @@ jobs:
           git push origin "$TAG_NAME"
 
           echo "Creating GitHub release..."
-          RELEASE_ID=$(gh release create "$TAG_NAME" --target "release" --title "$RELEASE_NAME" --notes "$RELEASE_BODY")
+          RELEASE_ID=$(gh release create "$TAG_NAME" --title "$RELEASE_NAME" --notes "$RELEASE_BODY")
           if [[ "${{ github.ref }}" == *Important ]]; then
             echo "This is a very important release"
-            gh release update "$RELEASE_ID" --append-tag "very-important"
+            gh release update "$RELEASE_ID" --append-tag "VERY-IMPORTANT"
           fi
