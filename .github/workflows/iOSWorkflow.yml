@@ -20,7 +20,7 @@ jobs:
         run: swiftlint
 
       - name: Build application
-        run: xcodebuild build -scheme NVToDo -allowProvisioningUpdates
+        run: xcodebuild build -scheme NVToDo -destination "platform=iOS Simulator,name=iPhone 12" -allowProvisioningUpdates
 
       - name: Run tests
         run: xcodebuild test -scheme NVToDo -allowProvisioningUpdates
