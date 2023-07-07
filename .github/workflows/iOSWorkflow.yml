@@ -19,8 +19,13 @@ jobs:
       - name: Lint with SwiftLint
         run: swiftlint
 
+      - name: Build
+        run: swift build
+      - name: Run tests
+        run: swift test
+
       - name: Create Tag and Release
-        if: startsWith(github.ref, 'refs/heads/release_v') # Only execute for branches starting with "release_v" 
+        if: startsWith(github.ref, 'refs/heads/release_v') # Only execute for branches starting with "release_v"
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }} # Use the secret here
         run: |
@@ -34,7 +39,7 @@ jobs:
 
           echo "Creating GitHub release..."
           RELEASE_ID=$(gh release create "$TAG_NAME" --title "$RELEASE_NAME" --notes "$RELEASE_BODY")
-          if [[ "${{ github.ref }}" == *veryimportant ]]; then
+          if [[ "${{ github.ref }}" == *important ]]; then
             echo "This is a very important release"
             gh release update "$RELEASE_ID" --append-tag "very-important"
           fi
