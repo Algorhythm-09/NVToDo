@@ -32,6 +32,9 @@
             reference = "container:../../NVToDo.xctestplan"
             default = "YES">
          </TestPlanReference>
+         <TestPlanReference
+            reference = "container:NVToDo.xctestplan">
+         </TestPlanReference>
       </TestPlans>
       <Testables>
          <TestableReference

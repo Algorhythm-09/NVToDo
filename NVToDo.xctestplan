@@ -1,37 +1,22 @@
 {
   "configurations" : [
     {
-      "id" : "0BB9F6DE-51DE-47A5-8938-83DD704B7865",
-      "name" : "Test Scheme Action",
+      "id" : "41FCDA43-63C2-423E-89C5-78CF89FAF521",
+      "name" : "Configuration 1",
       "options" : {
 
       }
     }
   ],
   "defaultOptions" : {
-    "codeCoverage" : false,
-    "targetForVariableExpansion" : {
-      "containerPath" : "container:NVToDo.xcodeproj",
-      "identifier" : "849272292A55931500B19813",
-      "name" : "NVToDo"
-    }
+    "testTimeoutsEnabled" : true
   },
   "testTargets" : [
     {
-      "parallelizable" : true,
       "target" : {
         "containerPath" : "container:NVToDo.xcodeproj",
         "identifier" : "849272392A55931700B19813",
         "name" : "NVToDoTests"
-      }
-    },
-    {
-      "enabled" : false,
-      "parallelizable" : true,
-      "target" : {
-        "containerPath" : "container:NVToDo.xcodeproj",
-        "identifier" : "849272432A55931700B19813",
-        "name" : "NVToDoUITests"
       }
     }
   ],
