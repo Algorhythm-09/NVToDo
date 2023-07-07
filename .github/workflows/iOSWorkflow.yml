@@ -18,7 +18,7 @@ jobs:
 
       - name: Build application
         run: |
-          set -o pipefail && xcodebuild clean -scheme NVToDo -destination "platform=iOS Simulator,name=$DEVICE" -derivedDataPath $DERIVED_DATA_PATH build-for-testing | xcpretty --color --simple
+          set -o pipefail && xcodebuild clean -scheme NVToDo -destination "platform=iOS Simulator,id=YOUR_DEVICE_ID,name=iPhone 12" -derivedDataPath $DERIVED_DATA_PATH build-for-testing | xcpretty --color --simple
 
       - name: Upload products
         uses: actions/checkout@v3
@@ -28,7 +28,7 @@ jobs:
 
       - name: Run unit tests
         run: |
-          set -o pipefail && xcodebuild test-without-building -xctestrun $(find . -type f -name "*.xctestrun") -destination "platform=iOS Simulator,name=$DEVICE" -derivedDataPath $DERIVED_DATA_PATH -enableCodeCoverage YES -only-testing:$UNIT_TEST_TARGET | xcpretty --color --simple
+          set -o pipefail && xcodebuild test-without-building -xctestrun $(find . -type f -name "*.xctestrun") -destination "platform=iOS Simulator,id=YOUR_DEVICE_ID,name=iPhone 12" -derivedDataPath $DERIVED_DATA_PATH -enableCodeCoverage YES -only-testing:$UNIT_TEST_TARGET | xcpretty --color --simple
 
       - name: Create Tag and Release
         if: startsWith(github.ref, 'refs/heads/release_v') # Only execute for branches starting with "release_v"
