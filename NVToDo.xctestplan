@@ -18,6 +18,7 @@
   },
   "testTargets" : [
     {
+      "parallelizable" : true,
       "target" : {
         "containerPath" : "container:NVToDo.xcodeproj",
         "identifier" : "849272392A55931700B19813",
