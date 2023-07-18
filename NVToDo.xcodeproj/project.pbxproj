@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84796E542A582B020097B0E4 /* NVToDo.xctestplan in Sources */ = {isa = PBXBuildFile; fileRef = 84796E532A58223F0097B0E4 /* NVToDo.xctestplan */; };
+		84796E542A582B020097B0E4 /* NVToDoTest.xctestplan in Sources */ = {isa = PBXBuildFile; fileRef = 84796E532A58223F0097B0E4 /* NVToDoTest.xctestplan */; };
 		8492722E2A55931500B19813 /* NVToDoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8492722D2A55931500B19813 /* NVToDoApp.swift */; };
 		849272302A55931500B19813 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8492722F2A55931500B19813 /* ContentView.swift */; };
 		849272322A55931700B19813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849272312A55931700B19813 /* Assets.xcassets */; };
@@ -39,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		84796E532A58223F0097B0E4 /* NVToDo.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = NVToDo.xctestplan; sourceTree = "<group>"; };
+		84796E532A58223F0097B0E4 /* NVToDoTest.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = NVToDoTest.xctestplan; sourceTree = "<group>"; };
 		8492722A2A55931500B19813 /* NVToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NVToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8492722D2A55931500B19813 /* NVToDoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVToDoApp.swift; sourceTree = "<group>"; };
 		8492722F2A55931500B19813 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 		849272212A55931500B19813 = {
 			isa = PBXGroup;
 			children = (
-				84796E532A58223F0097B0E4 /* NVToDo.xctestplan */,
+				84796E532A58223F0097B0E4 /* NVToDoTest.xctestplan */,
 				8492722C2A55931500B19813 /* NVToDo */,
 				8492723D2A55931700B19813 /* NVToDoTests */,
 				849272472A55931700B19813 /* NVToDoUITests */,
@@ -304,7 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84796E542A582B020097B0E4 /* NVToDo.xctestplan in Sources */,
+				84796E542A582B020097B0E4 /* NVToDoTest.xctestplan in Sources */,
 				84FE8C9D2A56BC2F0061F0D0 /* TodoViewModel.swift in Sources */,
 				849272302A55931500B19813 /* ContentView.swift in Sources */,
 				849272582A55934300B19813 /* NVTodoCardView.swift in Sources */,
