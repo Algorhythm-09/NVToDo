@@ -42,5 +42,5 @@ jobs:
           RELEASE_ID=$(gh release create "$TAG_NAME" --title "$RELEASE_NAME" --notes "$RELEASE_BODY")
           if [[ "${{ github.ref }}" == *Important ]]; then
             echo "This is a very important release"
-            gh release view "$RELEASE_ID" --json "VERY-IMPORTANT"
+            gh release view "$RELEASE_ID" --json "VERY-IMPORTANT"  
           fi
