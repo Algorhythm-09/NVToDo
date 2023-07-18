@@ -23,7 +23,7 @@ jobs:
         run: xcodebuild build -scheme NVToDo -destination "platform=iOS Simulator,name=iPhone 12" -allowProvisioningUpdates
 
       - name: Run tests
-        run: xcodebuild test -scheme NVToDoTest -destination "platform=iOS Simulator,name=iPhone 12" -allowProvisioningUpdates
+        run: xcodebuild test -scheme NVToDo -destination "platform=iOS Simulator,name=iPhone 12" -allowProvisioningUpdates
 
       - name: Create Tag and Release
         if: startsWith(github.ref, 'refs/heads/release_v') # Only execute for branches starting with "release_v"
