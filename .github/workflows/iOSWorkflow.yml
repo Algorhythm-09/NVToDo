@@ -38,9 +38,3 @@ jobs:
           git tag -a "$TAG_NAME" -m "$RELEASE_NAME"
           git push origin "$TAG_NAME"
 
-          echo "Creating GitHub release..."
-          RELEASE_ID=$(gh release create "$TAG_NAME" --title "$RELEASE_NAME" --notes "$RELEASE_BODY")
-          if [[ "${{ github.ref }}" == *"Important" ]]; then
-                echo "This is a very important release"
-                gh release edit "$RELEASE_ID" --title "$RELEASE_NAME" --append-label "VERY-IMPORTANT"
-          fi
