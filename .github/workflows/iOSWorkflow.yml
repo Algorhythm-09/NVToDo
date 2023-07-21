@@ -38,3 +38,5 @@ jobs:
           git tag -a "$TAG_NAME" -m "$RELEASE_NAME"
           git push origin "$TAG_NAME"
 
+          gh release create "$TAG_NAME" --title "$RELEASE_NAME" --notes "$RELEASE_BODY" --draft=false --prerelease=true
+
